@@ -12,7 +12,7 @@ node {
                 app.push("${env.BUILD_NUMBER}")
                 app.push("latest")
                 sleep 3
-                sh "docker rmi registry.hub.docker.com/wnstn385/node-jen:${env.BUILD_NUMBER}"
+                sh "docker rmi registry.hub.docker.com/wnstn385/auth:${env.BUILD_NUMBER}"
             }
          
      }
