@@ -17,8 +17,8 @@ node {
          
      }
 
-    //  stage('Trigger Manifest') {
-    //      build job: "updatemanifest", parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
-    //      }        
+     stage('Trigger Manifest') {
+         build job: "auth-infra", parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
+         }        
 
  }
